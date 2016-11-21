@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "https://github.com/jebeck/denaturalized",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "reason": {
+        "type": "string"
+      },
+      "reasonCategory": {
+        "type": "string",
+        "enum": [
+          "Hiding World War II crimes or association with Nazis",
+          "Serious crimes, suspicion of spying for the communists, or association with terrorists",
+          "All other reasons"
+        ]
+      },
+      "denaturalizationYear": {
+        "type": "number",
+        "minimum": 1776,
+        "maximum": 2016
+      },
+      "status": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "name",
+      "reason",
+      "reasonCategory",
+      "denaturalizationYear"
+    ]
+  }
+}
