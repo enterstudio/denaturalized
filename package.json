@@ -1,6 +1,6 @@
 {
   "name": "denaturalized",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JSON datasets of denaturalized (former) citizens by country, starting with the United States.",
   "main": "united-states.json",
   "scripts": {
